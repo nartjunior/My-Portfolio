@@ -18,34 +18,52 @@ class MainDesktop extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
+          Padding(
+            padding: const EdgeInsets.only(top: 60.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                // intro message
+                const Text(
+                  "Hi, I'm a Flutter Developer ",
+                  style: TextStyle(
+                      fontSize: 30,
+                      height: 1.5,
+                      fontWeight: FontWeight.bold,
+                      color: CustomColor.whitePrimary),
+                ),
+                const SizedBox(
+                  height: 30,
+                ),
+                const Text(
+                    ' Always ready to Contribute to Innovative Projects | Focuses on Team Success \n Self-taught Flutter developer, building user-friendly Android apps. \n Expanding skills with React & Next.js. \n Freelance projects include unit converter, football score app, chat app etc. \n Internship experience on real projects like Apparule & HR App. \n Prev roles: Communication & Sales at Neptun, Web Dev at Llatki). \n Excited for new challenges as a Flutter developer.'),
+                const SizedBox(height: 30,),
+                // contact btn
+                SizedBox(
+                  width: 250,
+                  child: ElevatedButton(
+                    onPressed: () {},
+                    child: const Text("Get in touch"),
+                  ),
+                ),
+              ],
+            ),
+          ),
           Column(
-            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              // intro message
+              Image.asset(
+                "assets/profile1.png",
+                width: screenWidth / 3,
+              ),
               const Text(
-                "Hi, \nI'm Nart Pacarizi\na Flutter Developer",
+                " Nart Pacarizi ",
                 style: TextStyle(
                     fontSize: 30,
                     height: 1.5,
                     fontWeight: FontWeight.bold,
                     color: CustomColor.whitePrimary),
               ),
-              const SizedBox(
-                height: 15,
-              ),
-              // contact btn
-              SizedBox(
-                width: 250,
-                child: ElevatedButton(
-                  onPressed: () {},
-                  child: const Text("Get in touch"),
-                ),
-              ),
             ],
-          ),
-          Image.asset(
-            "assets/profile.png",
-            width: screenWidth / 2,
           ),
         ],
       ),

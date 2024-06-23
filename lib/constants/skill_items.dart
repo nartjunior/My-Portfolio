@@ -43,7 +43,7 @@ const List<Map> skillItems = [
     "title": "React",
   },
 {
-    "img": "assets/nextjs.png",
+    "img": "assets/nextjs.jpg",
     "title": "Next.js",
   },
 
